@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<div>
+    View Book :
+<ul >
+    
+            <li> Book id:{{book.id}} </li>
+            <li><h3> Book name:{{book.name}}</h3> </li>
+            <li> Description:{{ book.description}} </li>
+            <li> Price : {{book.price}}</li>
+            <li> Appropriate : {{book.appropriate}}</li>
+            <li>image : <img src={{book.image}}></li>
+
+
+
+
+            <li> 
+                <a href="{{url_for('authors.author_details',author_id=book.author_id )}}">
+                    {{author.name}} 
+                </a>
+                    
+            </li>
+   
+
+    
+</ul>
+<a href= "{{url_for('books.index')}}">
+    home 
+</a>    
+</div>
+
+{% endblock %}

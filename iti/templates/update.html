@@ -1,0 +1,14 @@
+<form action='' method = "POST" enctype="multipart/form-data">
+    <p>name <input type = "text" name = "name" value="{{book.name}}" /></p>
+    <p>description <input type = "integer" name = "description" value="{{book.description}}" /></p>
+    <p>price <input type = "text" name = "price" value="{{book.price}}" /></p>
+    <label>appropriate :</label>
+    <select name="appropriate" width="300px">
+        <option value="under 8"> under 8 </option>
+        <option value="8-15">8-15</option>
+        <option value="adults">adults</option>
+    </select>
+    <p>author_id <input type = "text" name = "author_id" value="{{book.author_id}}"/></p>
+    <input type="file" name="file"  />
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
